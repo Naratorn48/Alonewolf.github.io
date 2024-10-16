@@ -1,0 +1,44 @@
+/* styles.css */
+
+/* ตั้งค่าพื้นหลังของ carousel */
+.carousel-item {
+    height: 400px; /* ความสูงของแบนเนอร์ */
+}
+
+.carousel-item img {
+    height: 100%; /* ให้ภาพเต็มความสูง */
+    object-fit: cover; /* ปรับการแสดงผลภาพ */
+}
+
+/* ตั้งค่าความสูงของ hero section */
+.hero {
+    height: 400px; 
+}
+
+/* ปรับแต่ง text ของ navbar */
+.navbar {
+    background-color: #343a40; /* สีพื้นหลังของ navbar */
+}
+
+.navbar .nav-link {
+    color: #ffffff; /* สีของลิงก์ */
+}
+
+.navbar .nav-link:hover {
+    color: #f8f9fa; /* สีเมื่อ hover */
+}
+
+/* ปรับแต่ง footer */
+footer {
+    background-color: #343a40; /* สีพื้นหลังของ footer */
+    color: #ffffff; /* สีของข้อความใน footer */
+}
+
+/* ปรับแต่ง button */
+.btn-primary {
+    background-color: #007bff; /* สีพื้นหลังของปุ่ม */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* สีเมื่อ hover */
+}
