@@ -1,7 +1,8 @@
 /* styles.css */
 
-
-
+.carosel-item {
+    height: 400px;
+}
 
 .carousel-item img {
     height: 100%; /* ให้ภาพเต็มความสูง */
