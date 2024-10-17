@@ -1,9 +1,7 @@
 /* styles.css */
 
-/* ตั้งค่าพื้นหลังของ carousel */
-.carousel-item {
-    height: 800px; /* ความสูงของแบนเนอร์ */
-}
+
+
 
 .carousel-item img {
     height: 100%; /* ให้ภาพเต็มความสูง */
