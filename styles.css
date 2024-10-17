@@ -2,7 +2,7 @@
 
 /* ตั้งค่าพื้นหลังของ carousel */
 .carousel-item {
-    height: 300px; /* ความสูงของแบนเนอร์ */
+    height: Auto; /* ความสูงของแบนเนอร์ */
 }
 
 .carousel-item img {
