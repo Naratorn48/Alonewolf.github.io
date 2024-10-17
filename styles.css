@@ -1,7 +1,8 @@
 /* styles.css */
 
 .carosel-item {
-    height: 500px;
+    height: 300px;  // ปรับความสูง
+    
 }
 
 .carousel-item img {
