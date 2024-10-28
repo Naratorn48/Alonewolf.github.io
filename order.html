@@ -1,1 +1,41 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สั่งซื้อสินค้า</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container my-5">
+        <h2>สั่งซื้อสินค้า</h2>
+        <div id="product-info"></div>
+        <form>
+            <div class="form-group">
+                <label for="name">ชื่อ</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="address">ที่อยู่จัดส่ง</label>
+                <textarea class="form-control" id="address" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">ยืนยันการสั่งซื้อ</button>
+        </form>
+    </div>
+
+    <script>
+        // รับค่าจาก URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const product = urlParams.get('product');
+        const productInfo = document.getElementById('product-info');
+
+        // แสดงข้อมูลสินค้า
+        productInfo.innerHTML = `<h5>คุณต้องการสั่งซื้อ: ${product}</h5>`;
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
 
