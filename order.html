@@ -9,8 +9,8 @@
 <body>
     <div class="container my-5">
         <h2>สั่งซื้อสินค้า</h2>
-        <div id="product-info"></div>
-        <form>
+        <div id="product-info" class="mb-3"></div>
+        <form id="orderForm">
             <div class="form-group">
                 <label for="name">ชื่อ</label>
                 <input type="text" class="form-control" id="name" required>
@@ -21,6 +21,12 @@
             </div>
             <button type="submit" class="btn btn-primary">ยืนยันการสั่งซื้อ</button>
         </form>
+        <div id="confirmation" class="mt-4" style="display:none;">
+            <h5>ขอบคุณสำหรับการสั่งซื้อ!</h5>
+            <p>ชื่อ: <span id="confirm-name"></span></p>
+            <p>ที่อยู่จัดส่ง: <span id="confirm-address"></span></p>
+            <p>สินค้า: <span id="confirm-product"></span></p>
+        </div>
     </div>
 
     <script>
@@ -31,6 +37,24 @@
 
         // แสดงข้อมูลสินค้า
         productInfo.innerHTML = `<h5>คุณต้องการสั่งซื้อ: ${product}</h5>`;
+
+        // การจัดการฟอร์มเมื่อส่ง
+        document.getElementById('orderForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // รับข้อมูลจากฟอร์ม
+            const name = document.getElementById('name').value;
+            const address = document.getElementById('address').value;
+
+            // แสดงข้อมูลยืนยันการสั่งซื้อ
+            document.getElementById('confirm-name').textContent = name;
+            document.getElementById('confirm-address').textContent = address;
+            document.getElementById('confirm-product').textContent = product;
+
+            // ซ่อนฟอร์มและแสดงยืนยัน
+            document.getElementById('orderForm').style.display = 'none';
+            document.getElementById('confirmation').style.display = 'block';
+        });
     </script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -38,4 +62,3 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
-
