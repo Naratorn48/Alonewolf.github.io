@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yak AnShop - ติดต่อเรา</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .bg-dark-red {
+            background-color: #8B0000; /* สีแดงเข้ม */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark-red fixed-top">
+        <div class="container">
+            <a class="navbar-brand text-white" href="#">Yak AnShop</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <div class="container my-5">
+        <h2 class="text-center">ติดต่อเรา</h2>
+        <p class="text-center">เรายินดีรับฟังความคิดเห็นและข้อสงสัยจากคุณ</p>
+        
+        <div class="row">
+            <div class="col-md-6">
+                <h4>ที่อยู่</h4>
+                <p>123/45 ถนนตัวอย่าง<br>เขตบางกอกน้อย<br>กรุงเทพฯ 10700</p>
+
+                <h4>ติดต่อเรา</h4>
+                <p>โทร: 012-345-6789<br>อีเมล: <a href="mailto:info@akan.shop">info@akan.shop</a></p>
+
+                <h4>เวลาทำการ</h4>
+                <p>จันทร์ - ศุกร์: 9:00 - 18:00 น.<br>เสาร์ - อาทิตย์: ปิดทำการ</p>
+            </div>
+            <div class="col-md-6">
+                <h4>ส่งข้อความถึงเรา</h4>
+                <form>
+                    <div class="form-group">
+                        <label for="name">ชื่อ</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">อีเมล</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">ข้อความ</label>
+                        <textarea class="form-control" id="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">ส่งข้อความ</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark-red text-white text-center py-4">
+        <p>&copy; 2024 Yak AnShop. สงวนสิทธิ์ทุกประการ.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
