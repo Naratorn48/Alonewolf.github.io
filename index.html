@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="th">
 <head>
     <meta charset="UTF-8">
@@ -43,13 +43,13 @@
 <div id="bannerCarousel" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="https://du.lnwfile.com/_webp_max_images/4096/4096/rs/le/h4.webp" class="d-block w-100" alt="Banner 1" style="height: 100px; object-fit: cover;">
+            <img src="https://du.lnwfile.com/_webp_max_images/4096/4096/rs/le/h4.webp" class="d-block w-100" alt="Banner 1" style="height: 800px; object-fit: cover;">
         </div>
         <div class="carousel-item">
-            <img src="https://du.lnwfile.com/_webp_max_images/4096/4096/rf/43/zi.webp" class="d-block w-100" alt="Banner 2" style="height: 100px; object-fit: cover;">
+            <img src="https://du.lnwfile.com/_webp_max_images/4096/4096/rf/43/zi.webp" class="d-block w-100" alt="Banner 2" style="height: 800px; object-fit: cover;">
         </div>
         <div class="carousel-item">
-            <img src="https://du.lnwfile.com/_webp_max_images/4096/4096/4z/jf/ua.webp" class="d-block w-100" alt="Banner 3" style="height: 100px; object-fit: cover;">
+            <img src="https://du.lnwfile.com/_webp_max_images/4096/4096/4z/jf/ua.webp" class="d-block w-100" alt="Banner 3" style="height: 800px; object-fit: cover;">
         </div>
     </div>
     <a class="carousel-control-prev" href="#bannerCarousel" role="button" data-slide="prev">
@@ -63,7 +63,6 @@
 </div>
 
    <!-- Content Section -->
-<!-- Content Section -->
 <div class="container my-5">
     <h2>เกี่ยวกับเรา</h2>
     <p>เราเป็นร้านตัวแทนจำหน่ายหนังสือการ์ตูนที่มุ่งมั่นที่จะให้บริการสินค้าที่มีคุณภาพในราคาที่เหมาะสม.</p>
@@ -77,8 +76,7 @@
                     <h5 class="card-title">GANNIBAL เล่ม 13 (จบ)</h5>
                     <p class="card-text">(PRE-ORDER) แถมโปสการ์ด + การ์ดสะสม 1 ใบ/1 ออเดอร์</p>
                     <h5 class="card-title">ราคา: 855 บาท</h5>
-                    <input type="number" id="quantity-1" value="1" min="1" style="width: 60px;" />
-                    <button class="btn btn-primary" onclick="addToCart('GANNIBAL_13', 855, document.getElementById('quantity-1').value)">ใส่ตะกร้า</button>
+                    <a class="btn btn-primary" href="order.html?product=GANNIBAL_13">สั่งซื้อเลย</a>
                 </div>
             </div>
         </div>
@@ -89,8 +87,7 @@
                     <h5 class="card-title">ดาบพิฆาตอสูร เล่ม 01-23 (จบ)</h5>
                     <p class="card-text">แพ็คชุด</p>
                     <h5 class="card-title">ราคา: 1,199 บาท</h5>
-                    <input type="number" id="quantity-2" value="1" min="1" style="width: 60px;" />
-                    <button class="btn btn-primary" onclick="addToCart('DEMON_SLAYER', 1199, document.getElementById('quantity-2').value)">ใส่ตะกร้า</button>
+                    <a class="btn btn-primary" href="order.html?product=DEMON_SLAYER">สั่งซื้อเลย</a>
                 </div>
             </div>
         </div>
@@ -101,26 +98,12 @@
                     <h5 class="card-title">RURIDRAGON เล่ม 02</h5>
                     <p class="card-text">แถมโปสการ์ด + ที่คั่นหนังสือ 1 ใบ/1 ออเดอร์</p>
                     <h5 class="card-title">ราคา: 115 บาท</h5>
-                    <input type="number" id="quantity-3" value="1" min="1" style="width: 60px;" />
-                    <button class="btn btn-primary" onclick="addToCart('RURIDRAGON_02', 115, document.getElementById('quantity-3').value)">ใส่ตะกร้า</button>
+                    <a class="btn btn-primary" href="order.html?product=RURIDRAGON_02">สั่งซื้อเลย</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
-<!-- Script สำหรับการจัดการตะกร้า -->
-<script>
-    let cart = [];
-
-    function addToCart(productId, price, quantity) {
-        const item = { productId, price, quantity: parseInt(quantity) };
-        cart.push(item);
-        alert(`สินค้า ${productId} จำนวน ${quantity} ใส่ตะกร้าเรียบร้อยแล้ว!`);
-        console.log(cart); // คุณสามารถปรับเปลี่ยนให้แสดงผลใน UI ได้
-    }
-</script>
-
 
     <!-- Footer -->
     <footer class="bg-dark-red text-white text-center py-4">
