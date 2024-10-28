@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yak AnShop - ติดต่อเรา</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .bg-dark-red {
+            background-color: #8B0000; /* สีแดงเข้ม */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark-red fixed-top">
+        <div class="container">
+            <a class="navbar-brand text-white" href="#">Yak AnShop</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <div class="container my-5">
+        <h2 class="text-center">ติดต่อเรา</h2>
+        <p class="text-center">หากคุณมีข้อสงสัยหรือคำถาม สามารถติดต่อเราผ่านแบบฟอร์มด้านล่างนี้</p>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">ชื่อ</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">อีเมล</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">ข้อความ</label>
+                <textarea class="form-control" id="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">ส่งข้อความ</button>
+        </form>
+        <div id="confirmation" class="mt-4" style="display:none;">
+            <h5>ขอบคุณสำหรับการติดต่อ!</h5>
+            <p>เราจะติดต่อกลับไปในเร็วๆ นี้</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark-red text-white text-center py-4">
+        <p>&copy; 2024 Yak AnShop. สงวนสิทธิ์ทุกประการ.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // การจัดการฟอร์มเมื่อส่ง
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // ซ่อนฟอร์มและแสดงยืนยัน
+            document.getElementById('contactForm').style.display = 'none';
+            document.getElementById('confirmation').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
